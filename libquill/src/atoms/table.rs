@@ -5,7 +5,7 @@
 use atoms::atom::*;
 
 pub struct Table<T: Atom> {
-    bindings: Vec<(String, T)>
+    pub bindings: Vec<(String, T)>
 }
 
 impl<T: Atom> Atom for Table<T> { 

@@ -13,3 +13,19 @@ pub enum QuillType {
 pub trait Atom {
     fn get_type() -> QuillType;
 }
+
+/// This is the most used Constant in the Quill language. In fact,
+/// I cannot at the time of writing this comment think of a time where
+/// the base of Quill would want to be implemented for any other kind of
+/// constant, but it can be.
+impl Atom for String {
+    fn get_type() ->  QuillType {
+        QuillType::Constant
+    }
+}
+
+impl Atom for Vec<String> {
+    fn get_type() -> QuillType {
+        QuillType::Constant
+    }
+}

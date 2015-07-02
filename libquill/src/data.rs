@@ -3,6 +3,7 @@
 
 use atoms::atom::*;
 use atoms::table::*;
+
 /// This is the top-level binding for the Quill data model. It binds identifiers with
 /// quill atoms. Because of how the binding works, this can be represented as a Quill
 /// table itself.

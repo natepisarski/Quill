@@ -2,7 +2,7 @@
 use atoms::atom::*;
 
 pub struct List<T: Atom> {
-    data: Vec<T>,
+    pub data: Vec<T>,
 }
 
 impl<T: Atom> Atom for List<T> {
